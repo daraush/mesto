@@ -1,12 +1,9 @@
 .form__save-button {
-    /* background-image: url('../../../images/save-button.svg');
-    background-position: center; */
     width: 100%;
     border: none;
     padding: 14px;
     background-color: #000000;
     color: #ffffff;
-    font-family: "Inter", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -19,7 +16,7 @@
 .form__save-button:hover {
     opacity: .8;
     transition: opacity 1s ease;
-    cursor: url('../../../images/pointer.png'), auto;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 700px ) {

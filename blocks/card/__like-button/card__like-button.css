@@ -12,6 +12,6 @@
 .card__like-button:hover {
     opacity: .5;
     transition: opacity 1s ease;
-    cursor: url('../../../images/pointer.png'), auto;
+    cursor: pointer;
 }
 

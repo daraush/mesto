@@ -16,7 +16,7 @@
 .popup__close-button:hover {
     opacity: .6;
     transition: opacity 1s ease;
-    cursor: url('../../../images/pointer.png'), auto;
+    cursor: pointer;
 }
 
 

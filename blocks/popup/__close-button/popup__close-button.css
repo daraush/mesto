@@ -1,5 +1,7 @@
 .popup__close-button {
-    grid-area: 1/2;
+    position: absolute;
+    top: -40px;
+    right: -40px;
     opacity: 1;
     width: 32px;
     height: 32px;
@@ -21,10 +23,10 @@
 @media screen and (max-width: 700px) {
     .popup__close-button {
         background-image: url('../../../images/close-icon-small.svg');
-        grid-area: 1;
-        justify-self: flex-end;
         width: 20px;
         height: 20px;
+        top: -37px;
+        right: 0px;
     }
 }
     

@@ -10,8 +10,6 @@ const jobInput = formElement.querySelector('.form__item_element_job');
 const profileName = document.querySelector('.profile__name');
 const profileJob = document.querySelector('.profile__job');
 
-init();
-
 
 /* Функция инициализации */
 
@@ -26,7 +24,7 @@ function init() {
 /* Открыть popup */
 
 function openPopup() {
-    updatePlaceholder();
+    updateInputValue();
     popup.classList.add('popup_opened');
     
 }
@@ -39,18 +37,12 @@ function closePopup() {
 }
 
 
-/* Обновление placeholder в зависимости от содержимого профиля */
+/* Обновление value в зависимости от содержимого профиля */
 
-function updatePlaceholder() {
+function updateInputValue() {
 
-    let profileNameText = profileName.innerText;
-    let profileJobText = profileJob.innerText;
-
-    nameInput.setAttribute('placeholder', profileNameText);  
-    jobInput.setAttribute('placeholder', profileJobText);
-
-    nameInput.value = "";  // Очищение формы nameInput
-    jobInput.value = "";
+    nameInput.setAttribute('value', profileName.textContent);  
+    jobInput.setAttribute('value', profileJob.textContent);
 
 }
 
@@ -58,14 +50,14 @@ function updatePlaceholder() {
 
 function formSubmitHandler (evt) {
     evt.preventDefault();
-    let profileNameText = nameInput.value;
-    let profileJobText = jobInput.value;
 
-    profileName.textContent = profileNameText;
-    profileJob.textContent = profileJobText;
+    profileName.textContent = nameInput.value;
+    profileJob.textContent = jobInput.value;
 
     closePopup();
 }
 
+
+init();
 
 

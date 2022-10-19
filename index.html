@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Дарья Ушакова">
   <meta name="keywords" content="HTML, CSS, JS">
-  <link rel="stylesheet" href="pages/index.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Место</title>
 </head>
 
@@ -26,52 +26,52 @@
                     <button type="button" class="profile__edit-button"></button>
                 </div>
             </div>
-            <button class="profile__add-button"></button>
+            <button type="button" class="profile__add-button"></button>
         </section>
         
         <section class="grid">
-            <div class="card">
+            <article class="card">
                 <img src="images/karachaevsk.jpg"  class="card__image" alt="вид на разрушенный дом и горы">
                 <div class="card__info">
                     <h2 class="card__title">Карачаевск</h2>
-                    <button type="button" class="card__like-button"></button>
+                    <button type="button" class="card__like-button card__like-button_active"></button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img src="images/elbrus.jpg"  class="card__image" alt="вид на равнины и горы">
                 <div class="card__info">
                     <h2 class="card__title">Гора Эльбрус</h2>
-                    <button type="button" class="card__like-button"></button>
+                    <button type="button" class="card__like-button card__like-button_active"></button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img src="images/dombay.jpg"  class="card__image" alt="вид на лес и горные пики">
                 <div class="card__info">
                     <h2 class="card__title">Домбай</h2>
-                    <button type="button" class="card__like-button"></button>
+                    <button type="button" class="card__like-button card__like-button_active"></button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img src="images/elbrus.jpg"  class="card__image" alt="вид на равнины и горы">
                 <div class="card__info">
                     <h2 class="card__title">Гора Эльбрус</h2>
-                    <button type="button" class="card__like-button"></button>
+                    <button type="button" class="card__like-button card__like-button_active"></button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img src="images/dombay.jpg"  class="card__image" alt="вид на лес и горные пики">
                 <div class="card__info">
                     <h2 class="card__title">Домбай</h2>
-                    <button type="button" class="card__like-button"></button>
+                    <button type="button" class="card__like-button card__like-button_active"></button>
                 </div>
-            </div>
-            <div class="card">
+            </article>
+            <article class="card">
                 <img src="images/karachaevsk.jpg"  class="card__image" alt="вид на разрушенный дом и горы">
                 <div class="card__info">
                     <h2 class="card__title">Карачаево-Черкесия</h2>
-                    <button type="button" class="card__like-button"></button>
+                    <button type="button" class="card__like-button card__like-button_active"></button>
                 </div>
-            </div>
+            </article>
         </section>
     
     </main>
@@ -88,21 +88,20 @@
   <section class="popup">
     <div class="popup__container">
         <button type="button" class="popup__close-button"></button>
-           
-        <form class="form">
-            <h2 class="form__heading">Редактировать профиль</h2>
+        <h2 class="popup__heading">Редактировать профиль</h2>
+        <form class="form" name="change-profile">
             <fieldset class="form__input-container">
                 <input type="text" class="form__item form__item_element_name" name="name">
                 <input type="text" class="form__item form__item_element_job" name="job">
             </fieldset>
-            <button type="submit" class="form__save-button"></button> 
+            <button type="submit" class="form__save-button">Сохранить</button> 
         </form>
 
     </div>
   </section>
 
   
-  <script src="scripts/index.js"></script>
+  <script src="./scripts/index.js"></script>
 
 </body>
 

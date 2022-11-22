@@ -9,11 +9,10 @@ const selectors = {
 }
 
 // проверка валидности формы
-
 function checkInputValidity(inputElement, selectors) {
     isValid = inputElement.validity.valid;
     
-    errorElement = getErrorElement(inputElement);
+    const errorElement = getErrorElement(inputElement);
     
     if (isValid) {
         hideInputError(inputElement, selectors);
@@ -59,12 +58,12 @@ function disableSubmitButton (submitButton, selectors) {
     submitButton.classList.add(selectors.submitButtonInactiveClass);
 }
 
-
 // переключение кнопки сабмита
 function toggleSubmitButton (inputList, submitButton, selectors) {
     const hasInvalidInput = inputList.some(inputElement => !inputElement.validity.valid);
 
     if (hasInvalidInput) {
+        submitButton.setAttribute('disabled', true);
         disableSubmitButton(submitButton, selectors);
     }
     else {
